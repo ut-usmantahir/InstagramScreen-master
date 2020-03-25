@@ -23,16 +23,17 @@ class MainActivity : AppCompatActivity() {
 
         val viewPagerAdapter = MyViewPagerAdapter(supportFragmentManager)
 
-        viewPagerAdapter.addFragment(FragmentGallery(),"Gallery")
-
-        viewPagerAdapter.addFragment(FragmentMenu(),"Menu")
-        viewPagerAdapter.addFragment(FragmentLocation(),"Location")
-        viewPagerAdapter.addFragment(FragmentProfile(),"Profile")
+        viewPagerAdapter.addFragment(FragmentGallery(),"")
+        viewPagerAdapter.addFragment(FragmentMenu(),"")
+        viewPagerAdapter.addFragment(FragmentLocation(),"")
+        viewPagerAdapter.addFragment(FragmentProfile(),"")
 
         viewPager.adapter = viewPagerAdapter
         tabs.setupWithViewPager(viewPager)
 
-     Glide.with(this)
+        setIcons()
+
+        Glide.with(this)
             .load(R.drawable.img_profile2)
             .placeholder(R.drawable.img_profile)
             .apply(RequestOptions.circleCropTransform())
@@ -40,6 +41,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun setIcons(){
+        tabs.getTabAt(0)?.setIcon(R.drawable.ic_grid)
+        tabs.getTabAt(1)?.setIcon(R.drawable.ic_open_menu)
+        tabs.getTabAt(2)?.setIcon(R.drawable.ic_marker)
+        tabs.getTabAt(3)?.setIcon(R.drawable.ic_user)
+
+    }
     class MyViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
         private val fragmentList : MutableList<Fragment> = ArrayList()

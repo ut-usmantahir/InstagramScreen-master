@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_marginTop="20dp"
     android:layout_height="?attr/actionBarSize"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:elevation="12dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
 
     <TextView
         android:id="@+id/textView"
@@ -14,6 +18,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
         android:text="usmantahir"
+        android:textStyle="bold"
         android:textColor="@color/colorPrussianBlue"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +28,6 @@
         android:layout_width="22dp"
         android:layout_height="21dp"
         android:layout_marginStart="4dp"
-
         android:layout_marginLeft="4dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,3 +47,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

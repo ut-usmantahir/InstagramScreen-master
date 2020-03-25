@@ -27,15 +27,13 @@ class FragmentGallery : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-//        val view = inflater.inflate(R.layout.fragment_gallery, container, false)
 
         fragBinding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_gallery, container, false)
 
         val view = fragBinding.root
 
-        val sglm = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        val sglm = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
         fragBinding.recyclerImageList.layoutManager = sglm
 
 
