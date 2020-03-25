@@ -5,19 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentLocation">
+    tools:context=".fragments.FragmentProfile">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_marginStart="139dp"
-        android:layout_marginLeft="139dp"
-        android:layout_marginTop="117dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginRight="139dp"
-        android:text="This is Fragment Location"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="116dp"
+        android:text="This is Fragment Profile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

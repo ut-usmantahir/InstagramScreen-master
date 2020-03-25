@@ -2,16 +2,12 @@ package com.example.instagramscreen.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.instagramscreen.model.Image
 import com.example.instagramscreen.R
 import com.example.instagramscreen.databinding.LayoutImageItemBinding
-import kotlinx.android.synthetic.main.layout_image_item.view.*
 
 class MyImagesAdapter(private val context: Context, private val images: ArrayList<String>) :
     RecyclerView.Adapter<MyImagesAdapter.MyViewHolder>() {

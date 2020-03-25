@@ -8,6 +8,9 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.instagramscreen.fragments.FragmentGallery
+import com.example.instagramscreen.fragments.FragmentLocation
+import com.example.instagramscreen.fragments.FragmentMenu
+import com.example.instagramscreen.fragments.FragmentProfile
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
@@ -22,9 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         viewPagerAdapter.addFragment(FragmentGallery(),"Gallery")
 
-        viewPagerAdapter.addFragment(FragmentGallery(),"Menu")
-        viewPagerAdapter.addFragment(FragmentGallery(),"Location")
-        viewPagerAdapter.addFragment(FragmentGallery(),"Profile")
+        viewPagerAdapter.addFragment(FragmentMenu(),"Menu")
+        viewPagerAdapter.addFragment(FragmentLocation(),"Location")
+        viewPagerAdapter.addFragment(FragmentProfile(),"Profile")
 
         viewPager.adapter = viewPagerAdapter
         tabs.setupWithViewPager(viewPager)

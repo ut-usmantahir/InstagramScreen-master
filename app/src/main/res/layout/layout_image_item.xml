@@ -7,8 +7,6 @@
         <variable
             name="image"
             type="com.example.instagramscreen.model.Image"/>
-
-
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
